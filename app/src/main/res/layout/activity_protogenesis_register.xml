@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_protogenesis_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bawei.taynews_demo.personalcenter.ProtogenesisRegister">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_pr_fahui"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back_discover_normal_night"/>
+
+        <TextView
+            style="@style/titleziti"
+            android:text="邮箱注册"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"/>
+
+    <LinearLayout
+        style="@style/youxiangzhuce">
+
+        <ImageView
+            style="@style/youxiangzhuce01"
+            android:src="@mipmap/sssssssssssssss"/>
+
+        <EditText
+            android:id="@+id/ed_pr_id"
+            style="@style/youxiangzhuce02"
+            android:hint="请输入帐号"
+            android:inputType="textVisiblePassword"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/youxiangzhuce">
+
+        <ImageView
+            style="@style/youxiangzhuce01"
+            android:src="@mipmap/ic_tip_pwd"/>
+
+        <EditText
+            android:id="@+id/ed_pr_pwd"
+            style="@style/youxiangzhuce02"
+            android:hint="请输入密码"
+            android:inputType="textVisiblePassword"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/youxiangzhuce">
+
+        <ImageView
+            style="@style/youxiangzhuce01"
+
+            android:src="@mipmap/ic_tip_pwd"/>
+
+        <EditText
+            android:id="@+id/ed_pr_pwd_too"
+            style="@style/youxiangzhuce02"
+            android:hint="请再次输入密码"
+            android:inputType="textVisiblePassword"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/youxiangzhuce">
+
+        <ImageView
+            style="@style/youxiangzhuce01"
+            android:src="@mipmap/feedbackicon_profile_night"/>
+
+        <EditText
+            android:id="@+id/ed_pr_email"
+            style="@style/youxiangzhuce02"
+            android:hint="请输入邮箱地址"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_pr_pr"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_login"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="15dp"/>
+</LinearLayout>

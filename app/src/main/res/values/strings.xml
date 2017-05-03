@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">号外！头条</string>
+    <string name="haoyou">好友状态</string>
+    <string name="huati">我的话题</string>
+    <string name="shoucang">收藏</string>
+    <string name="huodong">活动</string>
+    <string name="shangdian">商城</string>
+    <string name="fankui">反馈</string>
+    <string name="baoliao">我要爆料</string>
+    <string name="sousuo">搜索</string>
+    <string name="xiaoxi">消息</string>
+    <string name="lixian">离线</string>
+    <string name="shezhi">设置</string>
+    <string name="yingyong">精彩应用</string>
+    <string name="lixianxiazai">离线下载</string>
+    <string name="yejianmoshi">夜间模式</string>
+    <string name="设置">设置</string>
+</resources>

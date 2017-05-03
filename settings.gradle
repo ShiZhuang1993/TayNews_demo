@@ -1,0 +1,2 @@
+include ':app', ':xlistviewlibrary', ':demo', ':citypicker'
+include ':slidingmenu_library'

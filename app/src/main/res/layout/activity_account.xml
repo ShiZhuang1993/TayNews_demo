@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_off_top"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back_discover_normal_night"/>
+
+        <TextView
+            style="@style/titleziti"
+            android:text="帐号管理"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/acc_linear_head_portrait"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/linearlayout_biankuang"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="头像"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <com.bawei.taynews_demo.utils.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/big_loadpic_full_listpage_night" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/acc_linear_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/linearlayout_biankuang"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名"
+                    android:textColor="#000000"
+                    android:textSize="20sp"  />
+
+                <TextView
+                    android:id="@+id/acc_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="显示姓名tv"
+                    android:textSize="20sp"  />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:id="@+id/acc_linear_signature"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/linearlayout_biankuang"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="签名"
+                    android:textColor="#000000"
+                    android:textSize="20sp"   />
+
+                <TextView
+                    android:id="@+id/acc_tv_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20sp"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tuichubiaoshiziti"
+                    android:text="账号绑定"
+                   />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/linearlayout_biankuang"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/lin_buju">
+
+                    <com.bawei.taynews_demo.utils.CircleImageView
+                        android:src="@mipmap/uj"
+                        style="@style/biaoshi" />
+
+                    <TextView
+                        style="@style/tuichubiaoshiziti"
+                        android:text="手机号"
+                         />
+
+                    <TextView
+                        style="@style/tuichuzi"
+                        android:text="点击绑定"  />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    style="@style/lin_buju">
+
+                    <com.bawei.taynews_demo.utils.CircleImageView
+                        style="@style/biaoshi"
+                        android:src="@mipmap/account_icon_weixin" />
+
+                    <TextView
+                        style="@style/tuichubiaoshiziti"
+                        android:text="微信"
+                        />
+
+                    <TextView
+                        style="@style/tuichuzi"
+                        android:text="点击绑定" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    style="@style/lin_buju">
+
+                    <com.bawei.taynews_demo.utils.CircleImageView
+                        style="@style/biaoshi"
+                        android:src="@mipmap/uk" />
+
+                    <TextView
+                        style="@style/tuichubiaoshiziti"
+                        android:text="腾讯QQ"
+                          />
+
+                    <TextView
+                        style="@style/tuichuzi"
+                        android:text="点击绑定" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    style="@style/lin_buju">
+
+                    <com.bawei.taynews_demo.utils.CircleImageView
+                        style="@style/biaoshi"
+                        android:src="@mipmap/account_icon_weibo" />
+
+                    <TextView
+                        style="@style/tuichubiaoshiziti"
+                        android:text="新浪微博"
+                          />
+
+                    <TextView
+                        style="@style/tuichuzi"
+                        android:text="点击绑定" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    style="@style/lin_buju">
+
+                    <com.bawei.taynews_demo.utils.CircleImageView
+                        style="@style/biaoshi"
+                        android:src="@mipmap/account_icon_tencent" />
+
+                    <TextView
+                        style="@style/tuichubiaoshiziti"
+                        android:text="腾讯微博"
+                         />
+
+                    <TextView
+                        style="@style/tuichuzi"
+                        android:text="点击绑定" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    style="@style/lin_buju">
+
+                    <com.bawei.taynews_demo.utils.CircleImageView
+                        style="@style/biaoshi"
+                        android:src="@mipmap/account_icon_renren" />
+
+                    <TextView
+                        style="@style/tuichubiaoshiziti"
+                        android:text="人人网"
+                         />
+
+                    <TextView
+                        style="@style/tuichuzi"
+                        android:text="点击绑定"
+                       />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    style="@style/lin_buju">
+
+                    <com.bawei.taynews_demo.utils.CircleImageView
+                        style="@style/biaoshi"
+                        android:src="@mipmap/account_icon_kaixin" />
+
+                    <TextView
+                        android:text="开心网"
+                        style="@style/tuichubiaoshiziti" />
+
+                    <TextView
+                        android:text="点击绑定"
+                        style="@style/tuichuzi" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/acc_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="退出登录" />
+
+</LinearLayout>

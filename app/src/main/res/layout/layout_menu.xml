@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_menu_ic_na"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.bawei.taynews_demo.utils.CircleImageView
+            android:id="@+id/image_menu_touxiang"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/default_round_head" />
+
+        <TextView
+            android:id="@+id/te_menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="12"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_menu_sanfang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/image_menu_phone"
+            style="@style/tupian"
+            android:src="@mipmap/uj" />
+
+        <ImageView
+            android:id="@+id/image_menu_wx"
+            style="@style/tupian"
+            android:src="@mipmap/uo" />
+
+        <ImageView
+            android:id="@+id/image_menu_qq"
+            style="@style/tupian"
+            android:src="@mipmap/uk" />
+
+        <ImageView
+            android:id="@+id/image_menu_weibo"
+            style="@style/tupian"
+            android:src="@mipmap/un" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/menu_gengduodenglu"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/home_set_cehua"
+        android:button="@null"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/vs"
+        android:text="更多登录方式"
+        android:textColor="@color/hei" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="9"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/lin">
+
+                <ImageView
+                    style="@style/chicun"
+                    android:src="@mipmap/ic_drawer_search_normal" />
+
+                <TextView
+                    android:id="@+id/tvToday"
+                    style="@style/ziti"
+                    android:text="@string/haoyou" />
+            </LinearLayout>
+
+            <View style="@style/xuxian" />
+
+            <LinearLayout style="@style/lin">
+
+                <ImageView
+                    style="@style/chicun"
+                    android:src="@mipmap/ic_action_favor_on_normal" />
+
+                <TextView
+                    android:id="@+id/tvLastlist"
+                    style="@style/ziti"
+                    android:text="@string/huati" />
+            </LinearLayout>
+
+            <View style="@style/xuxian" />
+
+            <LinearLayout
+                android:id="@+id/lin_menu_shoucang"
+                style="@style/lin"
+                android:clickable="true">
+
+                <ImageView
+                    style="@style/chicun"
+                    android:clickable="false"
+                    android:src="@mipmap/ic_drawer_message_normal" />
+
+                <TextView
+                    style="@style/ziti"
+                    android:clickable="false"
+                    android:text="@string/shoucang" />
+            </LinearLayout>
+
+            <View style="@style/xuxian" />
+
+            <LinearLayout
+                android:id="@+id/lin_menu_huodong"
+                android:clickable="true"
+                style="@style/lin">
+
+                <ImageView
+                    android:clickable="false"
+                    style="@style/chicun"
+                    android:src="@mipmap/ic_drawer_offline_normal" />
+
+                <TextView
+                    android:clickable="false"
+                    android:id="@+id/tvMyFavorites"
+                    style="@style/ziti"
+                    android:text="@string/huodong" />
+            </LinearLayout>
+
+            <View style="@style/xuxian" />
+
+            <LinearLayout
+                android:id="@+id/lin_menu_shangcheng"
+                android:clickable="true"
+                style="@style/lin">
+
+                <ImageView
+                    android:clickable="false"
+                    style="@style/chicun"
+                    android:src="@mipmap/left_drawer_activity" />
+
+                <TextView
+                    android:clickable="false"
+                    android:id="@+id/tvMyComments"
+                    style="@style/ziti"
+                    android:text="@string/shangdian" />
+            </LinearLayout>
+
+            <View style="@style/xuxian" />
+
+            <LinearLayout style="@style/lin">
+
+                <ImageView
+                    style="@style/chicun"
+                    android:src="@mipmap/ic_drawer_setting_normal" />
+
+                <TextView
+                    android:id="@+id/tvMySettings"
+                    style="@style/ziti"
+                    android:text="@string/fankui" />
+            </LinearLayout>
+
+            <View style="@style/xuxian" />
+
+            <LinearLayout style="@style/lin">
+
+                <ImageView
+                    style="@style/chicun"
+                    android:src="@mipmap/ic_drawer_feedback_normal" />
+
+                <TextView
+                    android:id="@+id/baoliao"
+                    style="@style/ziti"
+                    android:text="@string/baoliao" />
+            </LinearLayout>
+
+            <View style="@style/xuxian" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/raiogrup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ri_bt_lixian"
+            style="@style/rdiobutton"
+            android:drawableTop="@mipmap/a28"
+            android:text="@string/lixianxiazai" />
+
+        <RadioButton
+            android:id="@+id/ri_bt_yejian"
+            style="@style/rdiobutton"
+            android:drawableTop="@mipmap/a96"
+            android:text="@string/yejianmoshi" />
+
+        <RadioButton
+            android:id="@+id/ri_bt_shezhi"
+            style="@style/rdiobutton"
+            android:drawableTop="@mipmap/adt"
+            android:text="@string/shezhi" />
+    </RadioGroup>
+
+</LinearLayout>
